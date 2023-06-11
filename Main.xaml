@@ -1,0 +1,192 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="694,1816" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="668,1751" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtMovieTitles" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows" sap:VirtualizedContainerService.HintSize="606,1640" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="152ef2bd-1659-4416-aa83-cabb722053c2" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,1423" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="152ef2bd-1659-4416-aa83-cabb722053c2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.imdb.com/" CvElementArea="114, 166, 99, 36" CvTextArea="158, 177, 39, 13" CvTextArgument="Menu" CvType="Button" DesignTimeRectangle="116, 169, 97, 32" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl id='imdbHeader-navDrawerOpen' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='imdbHeader-navDrawerOpen' tag='LABEL' type='' class='ipc-responsive-button ipc-btn--theme-baseAlt ipc-responsive-button--transition-l ipc-btn--on-textPrimary ipc-responsive-button--single-padding sc-jIRcFI dKNnuG hamburger__icon' aaname='' check:innerText='Menu' /&gt;" Guid="73d82a84-d3d2-48a5-adbe-7d14de005ba7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAkCAYAAACQePQGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ2SURBVGhD7ZcxixpBFMfzGfabLH4ByQfIgo2QIpDGSlJFrjiWa0KacKSRFGFTiYVsCsEiYBNYi8BdNYLCWogphSu2uGLhiv+9nZmVXe/Au5zKW/Me/NSZNzPI/Hbe6CvHcSDwQqQwRKQwRKQwRKQwRKQwRKQwRKQwRKQwRKQwRKQwRKQw5CBSZrMZXhpKqUfXzukt7ECkuPq8la/1ENsskgh+MVcBDiJlPp/bHfn3eLoU0nJ9Wcq5/Y0SkXJMNlLuMhS6m5yHcGlSOkpSXHgXAUYTBTUZITir236ifYlwECL82tFjxn8UomEXndp2/oOd48H/Qe1BAL9hx+yJyktZr9f6XX13Ta4RYpV1LFfmfSPFhT9Jsp5CpIj7TTMvP11pSr2F+DtCs5hf9Ox38BHp5RJE51l7f1ReSjwcmc2fBnCp3xvqFhQ9xSUp7TG0vjRG2K6j3qZ88ZTlm54oBDpv16XXMDstVZdyzIs+7uflKkav1sI423na6OAiou2isFJav8yJSpeRKUOEutEDzKbu2vSqSznmRb8a0D3x0z7TvyNzGqZdOOdlKQ9LVx7/iZRjkEtJJj79BA6gslKkg34if6ExW1LyspaXObOOCze/yJ8qZRna+SLlASUptLnB1LRxe4VP2ZgtKU6D/rvYGzxZRBgNI8TZgBub3yXlzK5Hr6vJGNHCtDZ5PWc/nIgU6vumyu1tKYT7MTQi8rhLEA865snfWZ48dK8Lk5MV1rf6QzWkHOOifwnum3dovfcKZewZvG6i9bbw/+YAVPaiP2UqW75OGZHCEJHCEJHCEJHCEJHCEJHCEJHCEJHCEJHCEJHCEJHCDgf3vHdySHHUIOQAAAAASUVORK5CYII=" InformativeScreenshot="e216f256febb67d38bf153dd3abc77f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='clicktoresponse:1686410892677:https://www.imdb.com/chart/moviemeter/?ref_=nv_mv_mpm' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Most Popular Movies'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="152ef2bd-1659-4416-aa83-cabb722053c2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.imdb.com/" DesignTimeRectangle="212, 395, 270, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Most Popular Movies'" FullSelectorArgument="&lt;webctrl aaname='Most Popular Movies' aria-role='presentation' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Most Popular Movies' aria-role='presentation' tag='SPAN' type='' class='ipc-list-item__text' check:innerText='Most Popular Movies' /&gt;" Guid="deea8f82-aaac-4521-8757-356be99716df" ImageBase64="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" InformativeScreenshot="0fe034964169805e46dd574fb731e370.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='clicktoresponse:1686410892677:https://www.imdb.com/chart/moviemeter/?ref_=nv_mv_mpm' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtMovieTitles]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Title' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="152ef2bd-1659-4416-aa83-cabb722053c2" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="188, 398, 625, 7000" DesignTimeScaleFactor="1" FriendlyName="'The Little'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="74bdef46-9a4d-4115-8372-df015dca7d40" InformativeScreenshot="6e204b59120196add4ae2d10e4427f40.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='clicktoresponse:1686410892677:https://www.imdb.com/chart/moviemeter/?ref_=nv_mv_mpm' title='Most Popular Movies - IMDb' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,717" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[string.Format(&quot;{0}\movies.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="movieTitles" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,448" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX Destination="[movieTitles.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dtMovieTitles]" />
+                    <ueab:WriteCellX Cell="[movieTitles.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[string.Format(&quot;Result&quot;)]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1368, -8, 1376, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAdVJREFUWEftlDssQ1EYx69q7+2tPt2iJjERLJV4LMSgBq9OWBjaREKICBI0MZSQVEMIDQORWiRKjBUbJWHvZMUuwfy53znpfbSJ3EgwOMMv53/O7fm+X865vdzHnQ/+EibABJgAE2ACBQLHyy4ItPAwGLDCzYFEMhLqF+HlslyZI9mUVzfvauUhErbDW6YCJodsZC0+7dDVz6dAIDpmB47jwCeZ4DzuIRkRBQ5uDyVljtwn1bnHUaTkkzU3NDdYSA7L4vk9tBgWQGJTDt1cK5De8YC5mOatWacigCeXirkJ77cVul6IIQHeQgvjkeJJYEa0AleJUrBZ6SloBQRe/f3KuF3XCzEkUFNVTEarXKyu2qwU/EqgqZ4KDHeLEOwQSO5rF3S9EEMC/lozVHpNJPe00WKIkRMIB0UC5l55b34/QwKNskCbnycZ324ckXyB3PX8iAC+TJg3Z9QXUSuwNEr3Idtz6hWMyFcw0Gkl+dtXgAKrE7TxxQZdQ7QCOUwmDu6OJOUELGb12WKoRNcLKRB4OJZgL+KEZNQFjxdlJKfW3ZA99ZL8lC4nI/Kcps9z7MvgfqxzFneTtYz8MUssOGF33gmv1wb+hr8NE2ACTIAJ/HcBH3wCnyEaX70T9tEAAAAASUVORK5CYII=" InformativeScreenshot="74bc5211a5fe73a927e04f4751e4bf32.jpg" Selector="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" Title="IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows" Url="https://www.imdb.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
